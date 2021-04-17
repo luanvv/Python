@@ -22,9 +22,9 @@ PIL.Image.fromarray(img_array).show()
 # Randomly flip an image.
 def random_flip_left_right(image):
     return tf.image.random_flip_left_right(image)
-# Randomly flip an image.
-def random_flip_left_right(image):
-    return tf.image.random_flip_left_right(image)
+# Display randomly flipped image.
+PIL.Image.fromarray(random_flip_left_right(img_array).numpy()).show()
+
 
 # Randomly change an image contrast.
 def random_contrast(image, minval=0.6, maxval=1.4):
